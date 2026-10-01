@@ -1,0 +1,40 @@
+<?php
+
+class Ticket
+{
+    private ?int $id;
+    private string $titulo;
+    private string $descripcion;
+    private string $estado;
+
+    public function __construct(string $titulo, string $descripcion)
+    {
+        $this->id = null;
+        $this->titulo = $titulo;
+        $this->descripcion = $descripcion;
+
+        // Regla de negocio:
+        // todo Ticket nuevo comienza en estado "pendiente".
+        $this->estado = 'pendiente';
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getTitulo(): string
+    {
+        return $this->titulo;
+    }
+
+    public function getDescripcion(): string
+    {
+        return $this->descripcion;
+    }
+
+    public function getEstado(): string
+    {
+        return $this->estado;
+    }
+}
