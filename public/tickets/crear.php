@@ -15,8 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'El título y la descripción son obligatorios.';
     } else {
         try {
-            // La capa de presentación recibe los datos e inicia la operación.
-            // La regla "pendiente" se aplica dentro de Ticket, no en el formulario.
+           
             $ticket = new Ticket($titulo, $descripcion);
             $conexion = Conexion::obtenerConexion();
             $repository = new TicketRepository($conexion);
