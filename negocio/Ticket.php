@@ -13,8 +13,6 @@ class Ticket
         $this->titulo = $titulo;
         $this->descripcion = $descripcion;
 
-        // Regla de negocio:
-        // todo Ticket nuevo comienza en estado "pendiente".
         $this->estado = 'pendiente';
     }
 
