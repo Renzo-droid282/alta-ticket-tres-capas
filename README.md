@@ -12,7 +12,7 @@ Aplicación PHP sencilla para registrar Tickets utilizando una arquitectura de t
 
 Ejecutar `db.sql` en MySQL/MariaDB.
 
-Luego configurar los datos de conexión en `config/config.php`.
+Luego copiar config/config.example.php como config/config.php y completar los datos de conexión.
 
 ## Regla importante
 
